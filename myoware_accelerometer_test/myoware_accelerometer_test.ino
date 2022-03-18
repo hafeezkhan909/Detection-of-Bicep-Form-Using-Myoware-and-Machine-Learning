@@ -64,7 +64,7 @@ input= analogRead(A0);
 //Serial.println(input);
 //Serial.println("\n");
 
-// === Read acceleromter data === //
+// === Reading the acceleromter data === //
   Wire.beginTransmission(ADXL345);
   Wire.write(0x32); // Start with register 0x32 (ACCEL_XOUT_H)
   Wire.endTransmission(false);
